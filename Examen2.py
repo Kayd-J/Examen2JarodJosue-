@@ -42,6 +42,12 @@ class MiClase:
             if song is None:
                 return False
         return True
+    def Encuentra(lista, elemento):
+        for el in lista:
+            if elemento == el:
+                return True
+        return False
+
 
 
 ################################################################################################
