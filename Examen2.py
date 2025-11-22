@@ -46,9 +46,10 @@ class MiClase:
 
 ################################################################################################
 # Ejemplo de ejecución
-objeto = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
+if __name__ == '__main__':
+    objeto = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
 
-print(objeto.ObtieneValencia(1234567))       # Esperado: 4
-print(objeto.DivisibleTempo(10))             # Esperado: [1, 2, 5, 10]
-print(objeto.ObtieneMasBailable([0.8, 0.9, 0.7]))  # Esperado: 0.9
-print(objeto.VerificaListaCanciones(["Canción 1", "Canción 2", "Canción 3"]))  # Esperado: True
+    print(objeto.ObtieneValencia(1234567))       # Esperado: 4
+    print(objeto.DivisibleTempo(10))             # Esperado: [1, 2, 5, 10]
+    print(objeto.ObtieneMasBailable([0.8, 0.9, 0.7]))  # Esperado: 0.9
+    print(objeto.VerificaListaCanciones(["Canción 1", "Canción 2", "Canción 3"]))  # Esperado: True
