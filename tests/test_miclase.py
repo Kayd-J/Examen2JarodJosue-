@@ -86,3 +86,8 @@ def test_verifica_lista_canciones_vacia():
 def test_verifica_lista_canciones_cadena_vacia():
     obj = MiClase(0, 0, 0, [], [])
     assert obj.VerificaListaCanciones([""]) is True
+
+def test_encuentra_elemento_en_lista_y_no_en_lista():
+    assert MiClase.Encuentra([1, 2, 3, 4], 3) is True
+    assert MiClase.Encuentra(["a", "b", "c"], "z") is False
+    assert MiClase.Encuentra([], 1) is False
