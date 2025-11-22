@@ -30,7 +30,8 @@ def test_obtiene_valencia_numero_negativo_raises():
 # DivisibleTempo tests (4)
 def test_divisible_tempo_normal():
     obj = MiClase(0, 0, 0, [], [])
-    assert obj.DivisibleTempo(10) == [1, 2, 5, 10]
+    # fallo intencional
+    assert obj.DivisibleTempo(10) == [1, 10]
 
 
 def test_divisible_tempo_primo():
